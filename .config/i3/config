@@ -189,3 +189,10 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Start picom
 exec_always --no-startup-id picom -b
+
+# xinput stuff - move this elsewhere to work without i3
+# Use `xinput list` to list devices
+# Use `xinput list-props <device>` to list the device's props
+# Touchpad tap to click
+exec xinput set-prop 12 361 1
+
